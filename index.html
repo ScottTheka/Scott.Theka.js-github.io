@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodlie Scott Theka | Full Stack Developer</title> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        :root {
+            --primary: #3498db;
+            --dark: #1b6fc4;
+            --light: #ecf0f1;
+            --accent: #eb3824;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #0f0d0d;
+            background-color: #dfd9d9;
+        }
+        
+        nav {
+            background: var(--dark);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3 {
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        
+        #about {
+            background: rgb(238, 234, 234);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(97, 56, 56, 0.1);
+            margin-top: 2rem;
+        }
+        
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        #skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            list-style: none;
+        }
+        
+        #skills li {
+            background: whitesmoke;
+            padding: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.8s;
+        }
+        
+        #skills li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(84, 241, 12, 0.1);
+        }
+        
+        .project {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        
+        .cv-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s;
+            margin: 1rem 0;
+        }
+        
+        .cv-download:hover {
+            background: var(--dark);
+            transform: scale(1.05);
+        }
+        
+        #contact p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        #contact a {
+            color: black;
+            text-decoration: none;
+            transition: all 0.8s;
+        }
+        
+        #contact a:hover {
+            color: rgb(250, 250, 250);
+            text-decoration: underline;
+            transition: all 0.3s;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark);
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#cv"><i class="fas fa-file-alt"></i> CV</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <script>src= "java.js"</script>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+              </button>
+        </ul>
+    </nav>
+
+    <section id= "about">
+        <div><img src= "profile.jpg.jpg" alt= "Rodlie Scott Theka" width= "150">
+              
+        </div>
+        
+                <h1>Rodlie Scott Theka</h1>
+                 <p>
+            <strong>Aspiring Full Stack Developer</strong><br><br>
+            I'm currently advancing my tech skills through a Full Stack Development learnership at Umuzi, where I'm gaining hands-on experience with both front-end and back-end technologies. Passionate about building functional, user-friendly web applications.
+        </p>
+        <p>
+            <strong>Currently mastering:</strong> <br>
+            HTML, CSS, JavaScript, and Java.
+        </p>
+        <p>
+            When I'm not coding, I enjoy analyzing the stocks and forex market. <br>Let's connect and grow together in tech!
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-git-alt"></i> Git/GitHub</li>
+            <li><i class="fab fa-java"></i> Java</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3><i class="fas fa-laptop-code"></i> My Portfolio Website</h3>
+            <p>A responsive portfolio site built with HTML and CSS, showcasing my skills and projects.</p>
+        </div>
+    </section>
+
+    <section id="cv">
+        <h2>My CV</h2>
+        <a href="https://drive.google.com/uc?export=download&id=1GP44ejw2TsH3bY_47C1DI8edjCbsqgAW" 
+           class="cv-download" 
+           download="Rodlie-Theka-CV.pdf">
+           <i class="fas fa-download"></i> Download My CV
+        </a>
+        <p>View my professional experience and education history.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:Thekascott@gmail.com">Thekascott@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> Phone: 071 319 8285</p>
+        <p><i class="fas fa-file-alt"></i> <a href="#cv">View my CV</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rodlie Scott Theka. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: var(--accent);"></i> and code</p>
+    </footer>
+</body>
+</html>
